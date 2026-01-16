@@ -1,4 +1,4 @@
-module github.com/GuoXinjian/excelize/v2
+module github.com/GuoXinjian/excelize
 
 go 1.24.0
 
