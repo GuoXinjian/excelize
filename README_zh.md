@@ -229,7 +229,7 @@ func main() {
         fmt.Println(err)
     }
     // 保存工作簿
-    if err = f.Save(); err != nil {
+    if err = f.Omit(clause.Associations).Save(); err != nil {
         fmt.Println(err)
     }
 }

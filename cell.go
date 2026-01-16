@@ -407,6 +407,8 @@ func (f *File) SetCellFloat(sheet, cell string, value float64, precision, bitSiz
 	}
 	c.S = ws.prepareCellStyle(col, row, c.S)
 	c.setCellFloat(value, precision, bitSize)
+	// 这里修改了。去掉了
+	// return f.removeFormula(c, ws, sheet)
 	return nil
 }
 
